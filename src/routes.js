@@ -6,9 +6,9 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
     $urlRouterProvider.otherwise('/search');
 
     $stateProvider
-        .state('app', {
+        .state('homePage', {
             url: '/',
-            component: 'app'
+            component: 'youtubeSearchPage'
         })
         .state('search', {
             url: '/search',
