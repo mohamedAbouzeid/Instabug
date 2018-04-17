@@ -1,0 +1,15 @@
+<div>
+    <h1>Related Videos</h1>
+    <ul ng-repeat="video in $ctrl.videos">
+        <a ng-href="/video/{{video.id.videoId}}">
+            <img src={{video.snippet.thumbnails.default.url}}>
+        </a>
+        <li>
+            <a ng-href="/video/{{video.id.videoId}}" style="color:red">{{video.snippet.title}}</a>
+        </li>
+        <li href="#/channel">
+            <a ng-href="/video/{{video.id.videoId}}" style="color:red">{{video.snippet.channelTitle}}</a>
+        </li>
+        <li>{{video.snippet.description}}</li>
+    </ul>
+</div>
